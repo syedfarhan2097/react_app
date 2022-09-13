@@ -27,6 +27,7 @@ function App() {
   ];
   return (
     <>
+    <div>test</div>
   <Expense items={expenses}></Expense>
         {/* {props.expenses.map((item)=>
         <ExpenseItems date={props.item.date} Name={props.item.title} Amount = {props.item.amount}></ExpenseItems>
