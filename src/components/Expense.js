@@ -15,4 +15,4 @@ const  Expense=(props)=>{
     );
 }
 
-export default Expense;
+export default Expense; 
