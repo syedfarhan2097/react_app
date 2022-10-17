@@ -10,20 +10,28 @@ const ExpenseItems = (props) => {
   //   Name, Amount
   // }=props
 
- const [count, setCount] = useState(0);
-//  const [count2, setCount2] = useState();
+//  const [count, setCount] = useState(0);
+const [title, newTitle] = useState(props.Name);
+const clickHandle = ()=>{
+  newTitle('Updated');
+  console.log(title);
+}
+
 
   return (
     <Card className="expense-item">
       <ExpenseDate dateNewCmpt={props.Date}></ExpenseDate>
-      <h2>{props.Name}</h2>
+      <h2>{title}</h2>
       <div className="expense-item__discription">
         <div className="expense-item__price">${props.Amount}</div>
       </div>
       <div>
-      <p>You clicked {count} times</p>
+      {/* <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>
         Click me
+      </button> */}
+      <button onClick={clickHandle}>
+      click
       </button>
     </div>
     </Card>
