@@ -1,4 +1,5 @@
 import Expense from "./components/Expense";
+import NewExpence from "./components/NewExpences/NewExpence";
 // import logo from "./logo.svg";
 import "./App.css";
 
@@ -27,6 +28,7 @@ function App() {
   ];
   return (
     <>
+    <NewExpence />
   <Expense items={expenses}></Expense>
         {/* {props.expenses.map((item)=>
         <ExpenseItems date={props.item.date} Name={props.item.title} Amount = {props.item.amount}></ExpenseItems>
